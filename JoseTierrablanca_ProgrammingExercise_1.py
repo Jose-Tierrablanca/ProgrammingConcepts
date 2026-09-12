@@ -99,7 +99,7 @@ def ticket_selection(remaining):
     validity = 'invalid'
     #Prompt for when the tickets left is not 1
     if remaining > 1:
-        print('How many tickets do you want to buy?')
+        print('How many tickets would you like to purchase?')
     else: validity = 'valid'
     #Only activates when the tickets left is only 1
     if validity == 'valid':
