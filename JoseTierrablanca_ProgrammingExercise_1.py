@@ -1,11 +1,11 @@
 
-#Accumulator for the amount of buyers (int)
-buyers = 0
+#Accumulator for the amount of customers (int)
+customers = 0
 
 def main():
     """
     The main function of the program handling the flow of data input
-    Holds a loop calling the other functions while keeping count of buyers
+    Holds a loop calling the other functions while keeping count of customers
 
     Parameters:
         None
@@ -19,15 +19,15 @@ def main():
         1. Call the prompt function
         2. Set tickets_bought by calling the ticket_selection function
         3. Subtract the return value of ticket_selection from tickets_available
-        4. Increase buyers
-        5. Print a final message and total buyers when all tickets are sold
+        4. Increase customers
+        5. Print a final message and total customers when all tickets are sold
 
     :return:
         None
     """
 
     #Allow modifications to buyer
-    global buyers
+    global customers
     tickets_available = 10
     #Repeats until all tickets have been sold
     while tickets_available > 0:
@@ -39,12 +39,12 @@ def main():
         #Subtracts the amount bought from total tickets
         tickets_available -= tickets_bought
         #Increase the running total
-        buyers += 1
+        customers += 1
         #Creates an empty space, aids me in reading
         print()
     #Displays a final message and the running total
     print("All tickets have been sold!")
-    print(f"The last 20 tickets were bought by {buyers} different customers")
+    print(f"The last 20 tickets were bought by {customers} different customers")
 
 def prompt(ticket_number):
     """
@@ -93,7 +93,7 @@ def ticket_selection(remaining):
         Current purchase (int): The number of tickets bought in that iteration
     """
     #Under a certain circumstance, we may have to modify the running total
-    global buyers
+    global customers
 
     #Resets the validity variable so the logic can be checked every iteration
     validity = 'invalid'
@@ -110,10 +110,10 @@ def ticket_selection(remaining):
             current_purchase = 1
         else:
             #If a buyer chooses to not buy, then program goes to the next iteration
-            #Each iteration increases the running total but "buyers -= 1"
+            #Each iteration increases the running total but "customers -= 1"
             #Cancels it out
             print('Alright')
-            buyers -= 1
+            customers -= 1
             current_purchase = 0
     #If the previous conditions have not been met, a loop will happen
     #Looped until a 'valid' integer is given
