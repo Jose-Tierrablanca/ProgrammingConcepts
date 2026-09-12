@@ -28,7 +28,7 @@ def main():
 
     #Allow modifications to buyer
     global buyers
-    tickets_available = 20
+    tickets_available = 10
     #Repeats until all tickets have been sold
     while tickets_available > 0:
         #Passing tickets available to the f-strings in the print functions
