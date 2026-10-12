@@ -1,0 +1,75 @@
+# Technical Design Document: <module 'JoseTierrablanca_ProgrammingExercise_6' from 'C:\\Users\\jose2\\PycharmProjects\\PythonProject1\\JoseTierrablanca_ProgrammingExercise_6.py'>
+
+# Name: Jose Tierrablanca
+# Date: October 11, 2026
+# Program Description: Asks the user to enter a phone number, a zipcode, and a social security,# Checks if they have valid formats  
+
+## Function: main
+Asks the user to enter a phone number, a social security, and a zip code.
+Calls functions passing each of the variables for their verification.
+
+Parameters:
+None
+
+Variables:
+phone_number (str): phone number entered by the user
+social_security (str): social security entered by the user
+zip_code (str): zip code entered by the user
+
+Logic:
+1. Ask for the user to enter the numbers for each variable
+2. Pass through their respective functions for verification
+
+:return:
+None
+
+## Function: verify_phone_number
+Verifies if the entered phone number is a valid phone number through pattern checking
+
+Parameters:
+number (str): phone number entered by the user
+
+Variables:
+number (str): phone number entered by the user
+
+Logic:
+Check if the entered phone number is a valid phone number through pattern checking
+1. Checks for usage of parentheses around the area code part
+2. Checks for usage of dashes to separate the groups
+
+:return:
+None
+
+## Function: verify_social_security
+Verifies if the entered social security is a valid social security through pattern checking
+
+Parameters:
+social (str): social security entered by the user
+
+Variables:
+social (str): social security entered by the user
+
+Logic:
+Check if the entered social security is a valid social security through pattern checking
+1. Checks for usage of spaces or dashes to separate the groups
+
+:return:
+None
+
+## Function: verify_zip_code
+Verifies if the entered zip code is a valid zip code through pattern checking
+
+Parameters:
+zip (str): zip code entered by the user
+
+Variables:
+zip (str): zip code entered by the user
+
+Logic:
+Check if the entered zip code is a valid zip code through pattern checking
+1. Checks whether the zipcode is a 5-digit or the extended 9-digit zip code
+
+:return:
+None
+
+#Link to your repository: https://github.com/Jose-Tierrablanca/ProgrammingConcepts  
